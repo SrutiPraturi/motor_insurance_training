@@ -1,7 +1,7 @@
 mkdir gitmove
-mkdir gitmove/"$(date +"%s")" 
+mkdir gitmove/assets 
 
-cp -r assets/* gitmove/"$(date +"%s")"/
+cp -r assets/* gitmove/assets/
 cd gitmove
 git init
 git config --global user.email "sruti_praturi@gmail.com"
