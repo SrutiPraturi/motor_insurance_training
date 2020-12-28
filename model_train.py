@@ -48,5 +48,5 @@ def train_model(data):
         yaml.dump(d, yaml_file, default_flow_style=False)
         
 if __name__ == "__main__":
-    data= load_data('datasets/insurance_processed_data.csv')
+    data= load_data('assets/insurance_processed_data.csv')
     train_model(data)
