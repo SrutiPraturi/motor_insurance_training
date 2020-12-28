@@ -17,5 +17,5 @@ RUN pip install Flask-gunicorn
 RUN python ./data_pipeline.py  
 RUN python ./feature_engg.py training
 RUN python ./model_train.py
-RUN ./git_shell.sh
+RUN sh ./git_shell.sh
 CMD ["gunicorn", "app:app"]
