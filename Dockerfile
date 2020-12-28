@@ -6,6 +6,8 @@ COPY model_train.py model_train.py
 COPY SwedishMotorInsurance.csv SwedishMotorInsurance.csv
 COPY git_shell.sh git_shell.sh
 RUN pip install --upgrade pip
+RUN apt-get update 
+RUN apt-get install git
 RUN pip install numpy
 RUN pip install pandas
 RUN pip install sklearn
