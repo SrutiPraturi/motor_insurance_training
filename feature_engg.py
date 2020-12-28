@@ -35,7 +35,7 @@ def model_ready_data(data):
 
 def save_data(data):
     
-    data.to_csv('datasets/insurance_processed_data.csv',index = False)
+    data.to_csv('assets/insurance_processed_data.csv',index = False)
         
     
 
