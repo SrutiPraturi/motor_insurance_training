@@ -3,6 +3,7 @@ dir="$(date +%s)"
 mkdir gitmove/${dir} 
 
 cp -r assets/* gitmove/${dir}/
+cp -v feature_engg.py gitmove/${dir}/
 cd gitmove
 git init
 git config --global user.email "sruti_praturi@gmail.com"
