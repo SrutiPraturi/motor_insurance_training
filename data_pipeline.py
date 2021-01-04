@@ -57,7 +57,7 @@ if __name__ == "__main__":
     os.mkdir('assets')
     os.mkdir('datasets')
     data = datapipeline.load_data('SwedishMotorInsurance.csv')
-    datapipeline.data_treated = treat_data(data)
+    data_treated = datapipeline.treat_data(data)
     datapipeline.feature_engg(data_treated)
     datapipeline.store_data(data_treated)
     
